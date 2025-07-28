@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Quote</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 50px; }
+    #quote { font-size: 1.5em; }
+  </style>
+</head>
+<body>
+  <h1 id="quote">Loading...</h1>
+
+  <script src="quotes.js"></script>
+  <script>
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").innerText = quotes[randomIndex];
+  </script>
+</body>
+</html>
